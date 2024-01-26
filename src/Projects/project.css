@@ -1,0 +1,202 @@
+#page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+.PROJECT{
+    height: calc(100vh - 100px);
+    background: linear-gradient(180deg,#0c0c1d,#111132);
+    height: 650px;
+}
+#h3{
+  font-weight: 800;
+  font-size: x-large;
+ 
+}
+
+#container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  top: 90px;
+  left: 100px;
+}
+
+#h3 {
+  color: white;
+}
+
+#ring {
+  width: 200px;
+  height: 200px;
+  border: 1px solid transparent;
+  border-radius: 50%;
+  position: absolute;
+}
+
+#ring:nth-child(1) {
+  border-bottom: 8px solid rgb(255, 141, 249);
+  animation: rotate1 2s linear infinite;
+}
+
+@keyframes rotate1 {
+  from {
+    transform: rotateX(50deg) rotateZ(110deg);
+  }
+
+  to {
+    transform: rotateX(50deg) rotateZ(470deg);
+  }
+}
+
+#ring:nth-child(2) {
+  border-bottom: 8px solid rgb(255,65,106);
+  animation: rotate2 2s linear infinite;
+}
+
+@keyframes rotate2 {
+  from {
+    transform: rotateX(20deg) rotateY(50deg) rotateZ(20deg);
+  }
+
+  to {
+    transform: rotateX(20deg) rotateY(50deg) rotateZ(380deg);
+  }
+}
+
+#ring:nth-child(3) {
+  border-bottom: 8px solid rgb(0,255,255);
+  animation: rotate3 2s linear infinite;
+}
+
+@keyframes rotate3 {
+  from {
+    transform: rotateX(40deg) rotateY(130deg) rotateZ(450deg);
+  }
+
+  to {
+    transform: rotateX(40deg) rotateY(130deg) rotateZ(90deg);
+  }
+}
+
+#ring:nth-child(4) {
+  border-bottom: 8px solid rgb(252, 183, 55);
+  animation: rotate4 2s linear infinite;
+}
+
+@keyframes rotate4 {
+  from {
+    transform: rotateX(70deg) rotateZ(270deg);
+  }
+
+  to {
+    transform: rotateX(70deg) rotateZ(630deg);
+  }
+}
+/* ----------------------------------------- */
+.cards{
+  display: flex;
+  flex-direction: row;
+  gap: 18px;
+  
+ 
+}
+.projectblur {
+  color: white;
+  position: relative;
+  font-family: sans-serif;
+  left: 350px;
+  top: 180px;
+ 
+}
+
+.projectblur::before,
+.projectblur::after {
+  content: "";
+  background-color: #fab5704c;
+  position: absolute;
+}
+
+.box{
+  
+}
+
+.projectblur .box {
+  width: 17em;
+  height: 24em;
+  padding: 1rem;
+  background-color: rgba(255, 255, 255, 0.074);
+  border: 1px solid rgba(255, 255, 255, 0.222);
+  -webkit-backdrop-filter: blur(20px);
+  backdrop-filter: blur(20px);
+  border-radius: 0.7rem;
+  transition: all ease 0.3s;
+}
+
+.projectblur .box {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.projectblur .box .title {
+  font-size: 2rem;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+}
+
+.projectblur .box div strong {
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.projectblur .box div p {
+  margin: 0;
+  font-size: 0.9em;
+  font-weight: 300;
+  letter-spacing: 0.1em;
+}
+
+.projectblur .box div span {
+  font-size: 0.7rem;
+  font-weight: 300;
+}
+
+.projectblur .box div span:nth-child(3) {
+  font-weight: 500;
+  margin-right: 0.2rem;
+}
+
+.projectblur .box:hover {
+  box-shadow: 0px 0px 20px 1px #ffbb763f;
+  border: 1px solid rgba(255, 255, 255, 0.454);
+}
+.projectblur:hover{
+  box-shadow: 0 0 10px #0ef
+}
+.photo img{
+width: 170px;
+  border-radius: 0%;
+}
+.projectblur p{
+  display: flex;
+  flex-direction: row;
+  font-size: medium;
+}
+/* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
+.projectblur a{
+  height: 20px;
+  top: 20px;
+  font-size: 25px;
+}
+.projectblur a:hover{
+  color: #0ef;
+
+}
+.plinks{
+  display: flex;
+  gap: 20px;
+  
+}
